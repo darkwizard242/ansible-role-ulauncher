@@ -12,6 +12,14 @@ galaxy_info:
       versions:
         - bionic
         - focal
+    - name: Debian
+      versions:
+        - stretch
+        - buster
+    - name: EL
+      versions:
+        - 7
+        - 8
 
   galaxy_tags:
     - ulauncher
