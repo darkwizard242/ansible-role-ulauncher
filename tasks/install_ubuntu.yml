@@ -1,0 +1,17 @@
+---
+# tasks file for ulauncher - Ubuntu OS
+
+- name: Ubuntu OS | Adding repository {{ ulauncher_repo }}
+  apt_repository:
+    repo: "{{ ulauncher_repo }}"
+    state: "{{ ulauncher_repo_desired_state }}"
+    filename: "{{ ulauncher_repo_filename }}"
+    codename: "{{ ansible_lsb['codename'] }}"
+    update_cache: yes
+
+- name: Ubuntu OS | Installing {{ ulauncher_app }}
+  apt:
+    name: "{{ ulauncher_app }}"
+    state: "{{ ulauncher_package_desired_state }}"
+    force_apt_get: yes
+    update_cache: yes
