@@ -1,6 +1,6 @@
 ---
 # tasks file for ulauncher
 
-- name: Import install_ubuntu.yml if OS family is Ubuntu
+- name: Import install_ubuntu.yml if OS is Ubuntu
   import_tasks: install_ubuntu.yml
-  when: ansible_os_family == "Ubuntu"
+  when: ansible_distribution == 'Ubuntu'
