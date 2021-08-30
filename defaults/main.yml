@@ -1,0 +1,8 @@
+---
+# defaults file for ulauncher
+
+ulauncher_repo: 'ppa:agornostal/ulauncher'
+ulauncher_repo_desired_state: present
+ulauncher_repo_filename: ulauncher
+ulauncher_app: ulauncher
+ulauncher_package_desired_state: present
