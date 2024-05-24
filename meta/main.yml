@@ -10,9 +10,9 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
+        - noble
         - jammy
         - focal
-        - bionic
 
   galaxy_tags:
     - ulauncher
